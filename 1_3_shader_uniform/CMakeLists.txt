@@ -1,14 +1,2 @@
-file(GLOB VERTEXT_FILES "${CMAKE_CURRENT_SOURCE_DIR}/*.vert")
-
-foreach(VERTEXT_FILE ${VERTEXT_FILES})
-    file(COPY "${VERTEXT_FILE}" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
-endforeach(VERTEXT_FILE ${VERTEXT_FILES})
-
-file(GLOB FRAGMENT_FILES "${CMAKE_CURRENT_SOURCE_DIR}/*.frag")
-
-foreach(FRAGMENT_FILE ${FRAGMENT_FILES})
-    file(COPY "${FRAGMENT_FILE}" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
-endforeach()
-
 add_executable(ShaderUniform main.cpp)
 target_link_libraries(ShaderUniform PRIVATE LearnOpenGL)
