@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.15.0)
+project(LearnOpenGL)
+
+find_package(glfw3 CONFIG REQUIRED)
+find_package(glad CONFIG REQUIRED)
+find_package(fmt CONFIG REQUIRED)
+
+add_library(LearnOpenGL INTERFACE)
+target_compile_features(LearnOpenGL INTERFACE cxx_std_17)
+target_link_libraries(LearnOpenGL INTERFACE glfw glad::glad fmt::fmt)
+
+add_subdirectory(1_1_hello_window)
+add_subdirectory(1_2_hello_triangle)
+add_subdirectory(1_2_hello_triangle_index)
+add_subdirectory(1_2_hello_triangle_exercise1)
+add_subdirectory(1_2_hello_triangle_exercise2)
+add_subdirectory(1_2_hello_triangle_exercise3)
