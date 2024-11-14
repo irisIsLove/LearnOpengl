@@ -1,0 +1,2 @@
+add_executable(ShaderInterpolation main.cpp)
+target_link_libraries(ShaderInterpolation PRIVATE LearnOpenGL)
