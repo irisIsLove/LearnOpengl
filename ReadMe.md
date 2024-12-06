@@ -1,4 +1,4 @@
-# LearnOpenGl学习代码
+# LearnOpenGL学习代码
 
 ## 项目环境
 
